@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <title>Magri</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item @@about"><a href="#">О компании</a></li>
+                <li class="navbar__item @@catalog"><a href="#">Каталог</a></li>
+                <li class="navbar__item @@faq"><a href="#faq">FAQ</a></li>
+                <li class="navbar__item @@contacts"><a href="#footer">Контакты</a></li>
+            </ul>
+            <a href="index.html"><img class="navbar__logo" src="images/logo.png" alt="logo" ></a>
+            <div class="navbar__info">
+                <form>
+                    <input class="navbar__input line-input" type="search" placeholder="Введите ключевое слово">
+                    <button class="input-submit" type="submit">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.972" fill-rule="evenodd" clip-rule="evenodd" d="M7.35938 0.984375C7.80728 0.984375 8.25522 0.984375 8.70312 0.984375C11.1617 1.30427 13.0106 2.53344 14.25 4.67188C15.1307 6.37903 15.3182 8.16028 14.8125 10.0156C14.5406 10.9451 14.0979 11.7785 13.4844 12.5156C14.5985 13.6454 15.7183 14.7704 16.8438 15.8906C16.8998 15.9718 16.9467 16.0552 16.9844 16.1406C16.9844 16.276 16.9844 16.4115 16.9844 16.5469C16.8906 16.7448 16.7448 16.8906 16.5469 16.9844C16.4115 16.9844 16.276 16.9844 16.1406 16.9844C16.0552 16.9467 15.9718 16.8998 15.8906 16.8438C14.7704 15.7183 13.6454 14.5985 12.5156 13.4844C10.7541 14.8752 8.76447 15.3596 6.54688 14.9375C3.87827 14.2689 2.11264 12.6283 1.25 10.0156C1.13067 9.58003 1.04213 9.14253 0.984375 8.70312C0.984375 8.25522 0.984375 7.80728 0.984375 7.35938C1.35071 4.60266 2.79863 2.64954 5.32812 1.5C5.98659 1.23831 6.66369 1.06643 7.35938 0.984375ZM7.79688 2.29688C9.89772 2.29256 11.5592 3.13631 12.7812 4.82812C14.0124 6.82328 14.0749 8.85453 12.9688 10.9219C11.8292 12.7317 10.1834 13.6797 8.03125 13.7656C5.63363 13.6457 3.89406 12.5207 2.8125 10.3906C2.0513 8.56838 2.15546 6.79756 3.125 5.07812C4.21847 3.37753 5.77578 2.45045 7.79688 2.29688Z" fill="#1D1818"/>
+                        </svg>    
+                    </button>
+                </form>
+                <a class="navbar__icon" href="#">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.988" fill-rule="evenodd" clip-rule="evenodd" d="M2.16972 2.52539C3.32997 2.51823 4.49012 2.52539 5.65019 2.54687C5.97134 2.63884 6.179 2.84652 6.27324 3.16992C6.47429 3.9884 6.68195 4.8048 6.89628 5.61914C11.1931 5.65493 15.4899 5.67642 19.7869 5.68359C20.2735 5.82642 20.4812 6.14869 20.41 6.65039C19.837 8.94204 19.2641 11.2337 18.6912 13.5254C18.3104 14.4931 17.6014 15.0302 16.5642 15.1367C14.1437 15.1654 11.7231 15.1654 9.30253 15.1367C8.49691 15.0744 7.87386 14.7091 7.43339 14.041C7.29954 13.8114 7.1993 13.5679 7.13261 13.3105C6.37348 10.2741 5.6144 7.23764 4.85527 4.20117C3.97754 4.16563 3.09668 4.14414 2.21269 4.13672C1.70871 4.00984 1.48671 3.68757 1.54667 3.16992C1.63329 2.83272 1.84097 2.61788 2.16972 2.52539Z" fill="#1D1818"/>
+                        <path opacity="0.967" fill-rule="evenodd" clip-rule="evenodd" d="M8.44298 16.6621C9.67902 16.7165 10.2591 17.361 10.1832 18.5957C9.88716 19.5283 9.2498 19.9365 8.2711 19.8203C7.29786 19.4997 6.90397 18.8337 7.08946 17.8223C7.31436 17.1694 7.76553 16.7827 8.44298 16.6621Z" fill="#1D1818"/>
+                        <path opacity="0.968" fill-rule="evenodd" clip-rule="evenodd" d="M17.08 16.6621C18.317 16.7174 18.897 17.3619 18.8203 18.5957C18.6699 19.2617 18.2617 19.6699 17.5956 19.8203C16.5612 19.9231 15.9239 19.4719 15.6835 18.4668C15.6591 17.4819 16.1246 16.8803 17.08 16.6621Z" fill="#1D1818"/>
+                    </svg>                        
+                </a>
+                <a class="navbar__icon" href="#">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.991" fill-rule="evenodd" clip-rule="evenodd" d="M10.4631 1.5C10.8232 1.5 11.1834 1.5 11.5436 1.5C13.2966 1.80636 14.4874 2.79389 15.1161 4.46258C15.6653 6.67328 14.9857 8.38691 13.0771 9.60351C11.8366 10.2097 10.5702 10.2678 9.27806 9.77778C7.42363 8.85032 6.56971 7.34579 6.7163 5.26421C6.94219 3.80706 7.69155 2.70917 8.96438 1.97053C9.44048 1.72462 9.94004 1.56777 10.4631 1.5Z" fill="#1D1818"/>
+                        <path opacity="0.994" fill-rule="evenodd" clip-rule="evenodd" d="M16.1351 20.0268C12.6923 20.0268 9.24943 20.0268 5.80661 20.0268C4.61541 19.8737 3.76403 19.2523 3.25246 18.1625C3.13973 17.8864 3.06516 17.6006 3.02874 17.3049C2.9286 15.8695 3.09017 14.465 3.51347 13.0914C3.79141 12.2177 4.26993 11.4782 4.94901 10.8729C5.71384 10.2948 6.57144 10.0711 7.52181 10.2017C7.93208 10.4316 8.32982 10.6802 8.71499 10.9474C10.137 11.7726 11.5787 11.8099 13.0403 11.0593C13.4939 10.7641 13.9538 10.4782 14.4199 10.2017C15.9488 10.0495 17.1109 10.6275 17.9062 11.9355C18.5029 13.0665 18.8384 14.2721 18.913 15.5524C18.9666 16.1496 18.9666 16.7462 18.913 17.3421C18.614 18.8866 17.688 19.7815 16.1351 20.0268Z" fill="#1D1818"/>
+                    </svg>    
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+        <main class="main">
+            <section class="heading">
+                <h1 class="heading__title container">Широкий ассортимент рыболовных <strong>снастей</strong> и
+                    туристического
+                    <strong>снаряжения</strong>
+                </h1>
+                <div class="heading__substrate">
+                    <div class="heading__wave">
+                        <svg width="1440" height="210" viewBox="0 0 1440 210" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M720 0H60C26.8629 0 0 26.8629 0 60V60C0 93.1371 26.863 120 60.0001 120H555.364C590.194 120 618.141 148.198 641.154 174.344C660.396 196.206 688.587 210 720 210C751.413 210 779.604 196.206 798.846 174.344C821.859 148.199 849.806 120 884.636 120H1380C1413.14 120 1440 93.1371 1440 60V60C1440 26.8629 1413.14 0 1380 0H720Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <a href="#about" class="heading__btn">
+                        <span>Подробнее</span>
+                        <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 1C9 0.447715 8.55228 0 8 0C7.44772 0 7 0.447715 7 1H9ZM7.29289 23.7071C7.68342 24.0976 8.31658 24.0976 8.70711 23.7071L15.0711 17.3431C15.4616 16.9526 15.4616 16.3195 15.0711 15.9289C14.6805 15.5384 14.0474 15.5384 13.6569 15.9289L8 21.5858L2.34315 15.9289C1.95262 15.5384 1.31946 15.5384 0.928932 15.9289C0.538408 16.3195 0.538408 16.9526 0.928932 17.3431L7.29289 23.7071ZM7 1V23H9V1H7Z"
+                                fill="#1D1818" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="about-wrapper container-grid">
+                    <div class="about__info">
+                        <h3 class="about__title">О компании</h3>
+                        <div class="about__text">
+                            <p>Оптовая компания <span>Магри</span> предоставляет обширный выбор<br>из товаров японских и
+                                европейских
+                                брендов, таких как : Lurefans, Garry Angler, Tiemco, Forest, Country Road, Valley hill,
+                                Trimm, Carson, Behr и Interfish.<br><br>У нас Вы можете приобрести все необходимое, а
+                                также получить профессиональную консультацию по снастям и туристическим товарам удобным
+                                для
+                                Вас способом.</p>
+                        </div>
+                        <a href="#" class="about__btn btn-outline">Узнать подробнее</a>
+                    </div>
+                    <div class="about__benefits">
+                        <div class="about__benefit">
+                            <div>
+                                <h5>20 +</h5>
+                                <p>Лет на рынке</p>
+                            </div>
+                        </div>
+                        <div class="about__benefit">
+                            <div>
+                                <h5>20 000 +</h5>
+                                <p>Наименований <br> товаров в каталоге</p>
+                            </div>
+                        </div>
+                        <div class="about__benefit">
+                            <div>
+                                <h5>Скидки</h5>
+                                <p>Удобная система <br> накопительных <br> и разовых скидок</p>
+                            </div>
+                        </div>
+                        <div class="about__benefit">
+                            <div>
+                                <h5>Доставка по РФ</h5>
+                                <p>Доставим в любой регион РФ <br> удобной Вам транспортной <br> компанией</p>
+                            </div>
+                        </div>
+                        <div class="about__benefit">
+                            <div>
+                                <h5>Поддержка</h5>
+                                <p>Предоставим <br> профессиональную <br> консультацию по товарам</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mini-catalog">
+                <h3 class="mini-catalog__title container">Каталог</h3>
+                <ul class="mini-catalog__list container">
+                    <li><a class="mini-catalog__item" href="#">
+                            <h5>Удилища</h5>
+                        </a></li>
+                    <li><a class="mini-catalog__item" href="#">
+                            <h5>Катушки</h5>
+                        </a></li>
+                    <li><a class="mini-catalog__item" href="#">
+                            <h5>Воблеры</h5>
+                        </a></li>
+                    <li><a class="mini-catalog__item" href="#">
+                            <h5>Попперы</h5>
+                        </a></li>
+                    <li><a class="mini-catalog__item" href="#">
+                            <h5>Блесна</h5>
+                        </a></li>
+                    <li><a class="mini-catalog__item" href="#">
+                            <h5>Снасточки</h5>
+                        </a></li>
+                    <li><a class="mini-catalog__item" href="#">
+                            <h5>Балансиры</h5>
+                        </a></li>
+                    <li><a class="mini-catalog__item" href="#">
+                            <h5>Кормушки</h5>
+                        </a></li>
+                    <li><a class="mini-catalog__item" href="#">
+                            <h5>Кароповая программа</h5>
+                        </a></li>
+                    <li><a class="mini-catalog__item" href="#">
+                            <h5>Крючки</h5>
+                        </a></li>
+                    <li><a class="mini-catalog__item" href="#">
+                            <h5>Мухи, стримеры</h5>
+                        </a></li>
+                    <li><a class="mini-catalog__item" href="#">
+                            <h5>Раттлины, цикады</h5>
+                        </a></li>
+                </ul>
+                <div class="container">
+                    <a href="#" class="mini-catalog__btn btn" id="faq">Перейти к каталогу</a>
+                </div>
+            </section>
+            <section class="faq container">
+                <h3 class="faq__title">Вопросы и ответы</h3>
+                <div class="faq-accordion">
+                    <div class="faq-accordion__item">
+                        <div class="faq-accordion__title">
+                            <h4>Оформление заказа</h4><img class="faq-accordion__icon" src="images/icons/arrow-icon.svg"
+                                alt="icon">
+                        </div>
+                        <div class="faq-accordion__text">
+                            Вы можете оформить заказ на сайте или запросить наш каталог по телефону <a
+                                href="tel:+74956474956">8 (495) 647-49-56</a> или по
+                            электронной почте <a href="mailto:magri@magri.ru">magri@magri.ru</a>. Обращаем Ваше
+                            внимание: для того, чтобы сделать заказ на сайте,
+                            <strong>необходимо зарегистрироваться</strong>. <br><br>
+                            Если Вы уже являетесь нашим клиентом и Вам предоставляются определенные скидки, но Вы
+                            впервые
+                            регистрируетесь на нашем сайте, пожалуйста, проинформируйте нас о факте Вашей регистрации.
+                            Отправьте Ваши регистрационные данные(наименование организации, логин) на нашу почту
+                            <a href="mailto:magri@magri.ru">magri@magri.ru</a>, и мы подключим Ваши скидки к Вашей
+                            учетной записи. <br><br>
+
+                            После успешной регистрации или авторизации на сайте, Вы можете собрать корзину из
+                            необходимых
+                            товаров в нашем каталоге. Если в наличии товара меньше, чем Вы желаете заказать, в корзину
+                            добавится столько товара, сколько естьв наличии. В разделе «Корзина» Вы можете перейти к
+                            оформлению заказа. Обращаем Ваше внимание: минимальная сумма заказа составляет 10 000 руб.
+                            <br><br>
+
+                            При оформлении заказа Вы можете использовать адрес, указанный в Вашем аккаунте, или изменить
+                            адрес на другой; затемвыбрать способ доставки. Вы можете следить за выполнением Вашего
+                            заказа в
+                            «Личном кабинете» интернет-магазина.После того, как Ваш заказ будет обработан, мы свяжемся с
+                            Вами для уточнения деталей заказа и выставления счета.
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="faq-accordion__item">
+                        <div class="faq-accordion__title">
+                            <h4>Доставка и оплата заказа</h4><img class="faq-accordion__icon"
+                                src="images/icons/arrow-icon.svg" alt="icon">
+                        </div>
+                        <div class="faq-accordion__text">
+                            Способы оплаты: <br>
+                            1. Безналичный расчет <br> 2. Наличными при оплате в нашем офисе по адресу <a
+                                href="https://yandex.ru/maps/213/moscow/search/111024%2C%20г.%20Москва%2C%20ул.%205-я%20кабельная%2C%20д.2%20(ТЦ%20СпортЕх)/?ll=37.717192%2C55.737899&sll=37.717192%2C55.737899&sspn=0.015622%2C0.005180&z=16.98"
+                                target="_blank">
+                                г. Москва, ул. 5-я
+                                кабельная, д.2 (ТЦ СпортЕх), этаж 1А, офис 7
+                            </a> <br><br>
+                            Способы доставки: <br>
+                            1. Для Москвы – самовывоз с нашего склада по адресу <a
+                                href="https://yandex.ru/maps/213/moscow/search/111024%2C%20г.%20Москва%2C%20ул.%205-я%20кабельная%2C%20д.2%20(ТЦ%20СпортЕх)/?ll=37.717192%2C55.737899&sll=37.717192%2C55.737899&sspn=0.015622%2C0.005180&z=16.98"
+                                target="_blank">
+                                г. Москва, ул. 5-я
+                                кабельная, д.2 (ТЦ СпортЕх), этаж 1А, офис 7
+                            </a> либо доставка по Москве (оговаривается отдельно) <br> 2. В другие города
+                            России доставляем заказ любой удобной для Вас транспортной компанией (доставка
+                            осуществляется до
+                            склада транспортной компании в Вашем городе).
+                        </div>
+                    </div>
+                    <div class="line"></div>
+
+                    <div class="faq-accordion__item">
+                        <div class="faq-accordion__title">
+                            <h4>Система скидок</h4><img class="faq-accordion__icon" src="images/icons/arrow-icon.svg"
+                                alt="icon">
+                        </div>
+                        <div class="faq-accordion__text">
+                            Система разовых скидок имеет следующие ценовые пороги: <br> более 25 000 рублей – 3 % <br>
+                            более 50 000
+                            рублей – 5 % <br> более 100 000 рублей – 7 % <br> более 150 000 рублей – 10 % <br><br>
+                            Система накопительных
+                            скидок осуществляется от заказа свыше 80000 руб.: <br> от 80001 до 150000 – 3 % <br> от
+                            150001 до 250000 – 5
+                            % <br> от 450001 до 600000 – 7 % <br> более 600001 – 10 % <br><br> Накопительная скидка
+                            присваивается аккаунту
+                            покупателя после того, как сумма всех его оплаченных заказов превысила 80000 руб.
+                            Накопительная
+                            скидка действует на все последующие заказы покупателя и растет по мере увеличения суммы
+                            закупки. <br><br> Скидки действуют на всю продукцию, кроме товаров Country Road, Forest,
+                            Tiemco, "100
+                            поклевок" (прикормка), Trivol.Минимальный заказ составляет 10 000 руб. Скидки действуют на
+                            условиях предоплаты заказа.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="footer__info">
+                <img class="footer__logo" src="images/logo.png" alt="logo">
+                <div class="footer__rights">
+                    <p>ООО «Магри»</p>
+                    <p>2024 © Все права защищены</p>
+                </div>
+            </div>
+            <nav class="footer__nav">
+                <h5 class="footer__nav-title">Навигация</h5>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="#">О компании</a></li>
+                    <li class="footer__nav-item"><a href="#">Каталог</a></li>
+                    <li class="footer__nav-item"><a href="#faq">FAQ</a></li>
+                    <li class="footer__nav-item"><a href="#">Видеогалерея</a></li>
+                </ul>
+            </nav>
+            <div class="footer__contacts">
+                <h5 class="footer__contacts-title">Контакты</h5>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item"><img src="images/icons/location-icon.svg" alt="icon"><a
+                            href="https://yandex.ru/maps/213/moscow/search/111024%2C%20г.%20Москва%2C%20ул.%205-я%20кабельная%2C%20д.2%20(ТЦ%20СпортЕх)/?ll=37.717192%2C55.737899&sll=37.717192%2C55.737899&sspn=0.015622%2C0.005180&z=16.98" target="_blank">
+                            111024, г. Москва, ул. 5-я кабельная, д.2 (ТЦ СпортЕх), этаж 1А, офис 7</a></li>
+                    <li class="footer__contacts-item"><img src="images/icons/email-icon.svg" alt="icon"><a
+                            href="mailto:magri@magri.ru">magri@magri.ru</a></li>
+                    <li class="footer__contacts-item"><img src="images/icons/phone-icon.svg" alt="icon"><a
+                            href="tel:+74956474956">8 (495) 647-49-56</a></li>
+                    <li class="footer__contacts-item"><img src="images/icons/person-icon.svg" alt="icon"><a
+                            href="tel:+79032881482"><span>Директор по продажам</span>8 (903) 288-14-82</a></li>
+                    <li class="footer__contacts-item"><img src="images/icons/person-icon.svg" alt="icon"><a
+                            href="tel:+79036754312"><span>Зам. директора по продажам</span>8 (903) 675-43-12</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

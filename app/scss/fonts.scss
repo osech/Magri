@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Comforter';
+    src: url('../fonts/Comforter-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 49px;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 52px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+@mixin accent-text {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+@mixin inscription-text {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+@mixin main-text {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+@mixin btn-text {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+@mixin background-text {
+    font-family: 'Comforter';
+    font-size: 100px;
+    line-height: 120px;
+    font-weight: 400;
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    color: $main-dark;
+    @include main-text;
+}
+
+strong {
+    color: $accent-orange;
+    font-weight: inherit;
+}
+
+
