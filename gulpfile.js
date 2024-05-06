@@ -83,6 +83,7 @@ function building() {
         'app/css/style.min.css',
         'app/fonts/*.*',
         'app/images/*.*',
+        'app/images/icons/*.*',
         'app/images/favicon/*.*',
         '!app/images/src',
         'app/js/main.min.js',
