@@ -33,9 +33,15 @@ html {
 }
 
 .line-input {
-	padding: 3px 32px 3px 8px;
+	@include inscription-text;
+	padding: 4px 8px 4px 8px;
 	border: 1px solid $main-dark;
 	border-radius: 10px;
+	display: block;
+
+	&:focus {
+		outline: none;
+	}
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -43,6 +49,12 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
 	-webkit-appearance:none;
+}
+
+.top-rounded {
+	margin-top: -70px;
+    border-radius: 70px 70px 0px 0px;
+    background: $main-white;
 }
 
 .btn {
@@ -56,6 +68,8 @@ input[type="search"]::-webkit-search-results-decoration {
 	cursor: pointer;
 	@include btn-text;
 	color: $main-white;
+	transition: .3s;
+
 
 	&:hover {
 		background: $accent-orange;
@@ -73,7 +87,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	}
 }
 
-.btn-outline {
+.btn-outline, .btn-outline-dark, .btn-outline-grey {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -84,6 +98,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	cursor: pointer;
 	@include btn-text;
 	color: $main-dark;
+	transition: .3s;
 
 	&:hover {
 		border-color: $accent-orange;
@@ -103,8 +118,201 @@ input[type="search"]::-webkit-search-results-decoration {
 	}
 }
 
+.btn-outline-dark {
+	border-color: $main-dark;
+}
 
+.btn-outline-grey {
+	border-color: $second-gray;
+}
 
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	@include inscription-text;
+	
+	& > * {
+		margin-right: 4px;
+	}
 
+	a {
+		transition: .2s;
+		&:hover {
+			color: $accent-orange;
+		}
+
+		&:active {
+			color: $accent-red;
+		}
+	}
+
+	span {
+		color: $accent-red;
+	}
+}
+
+.card__count {
+	display: flex;
+
+	span {
+		margin-inline: 8px;
+	}
+
+	svg {
+		path {
+			transition: .2s;
+		}
+
+		&:hover path {
+			fill: $accent-orange;
+		}
+	}
+}
+
+.disabled {
+	.card__count {
+		a {
+			pointer-events: none;
+			
+			svg path {
+				fill: $second-gray;
+			}
+		}
+
+		span {
+			color: $second-gray;
+		}
+	}
+}
+
+// popups
+
+.popup {
+	position: fixed;
+	z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $second-bg-blur;
+    opacity: 0; // Скрываем фон и сам попап
+    pointer-events: none; // Запрещаем ему быть целью событий
+    transition: 0.5s all;
+
+	&.active {
+		opacity: 1; // Показываем фон и попап
+		pointer-events: all; // Возвращаем события
+		transition: 0.5s all;
+	}
+
+	&__content {
+		position: absolute;
+		z-index: 2;
+    	top: 0;
+		right: 0;
+		background: $main-white;
+		width: 500px;
+		height: 100vh;
+		padding: 60px;
+		display: flex;
+		flex-direction: column;
+		transition: 0.5s all;
+		transform: translateX(70%);	
+
+		&.active {
+    		transition: 0.5s all;
+			transform: translateX(0);	
+		}
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+
+		h5 {
+			flex: 1 0 auto;
+			text-align: center;
+		}
+
+		img {
+			flex: 0 0 auto;
+		}
+	}
+
+	&__body {
+		flex-grow: 1;
+        overflow-y: auto;
+	}
+
+	&__footer {
+		flex-shrink: 0;
+		padding-top: 40px;
+		
+		.popup__btns {
+			display: flex;
+			gap: 16px;
+			
+			button, a {
+				flex: 1 0;
+			}
+		}
+
+	}
+}
+
+.popup__btn {
+	border-color: $second-gray;
+}
+
+.close-popup {
+	cursor: pointer;
+}
+
+.scroll-lock {
+	overflow: hidden;
+	padding-right: 17px;
+
+	.header {
+		padding-right: 17px;
+	}
+}
+
+// checkbox radiobox
+
+.custom-checkbox {
+	margin: 0;
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.custom-checkbox+.checkbox-label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+}
+
+.custom-checkbox+.checkbox-label::before {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid $second-gray;
+	border-radius: 3px;
+	margin-right: 12px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.custom-checkbox:checked+.checkbox-label::before {
+	background-image: url("../images/icons/check-mark-icon.svg");
+}
+
+.custom-checkbox:disabled+.checkbox-label::before {
+	border-color: $second-fading-red-20;
+	background: $second-fading-red-20;
+}
 
 

@@ -1,19 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-    @@include('./../components/_head.html', {
-        'title': 'Magri'
-        })
-<body>    
+@@include('./../components/_head.html', {
+'title': 'О компании'
+})
+
+<body>
     <div class="wrapper">
         @@include('./../components/_header.html', {
-            'about': 'active'
+        'about': 'active'
         })
-        
-        <main class="main">
-            
+
+        <main class="main about-page">
+            <section class="heading" id="top">
+                <div class="heading__title">
+                    <h2>О компании</h2>
+                </div>
+                <div class="heading__substrate">
+                    <div class="heading__wave">
+                        <svg width="1440" height="210" viewBox="0 0 1440 210" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M720 0H60C26.8629 0 0 26.8629 0 60V60C0 93.1371 26.863 120 60.0001 120H555.364C590.194 120 618.141 148.198 641.154 174.344C660.396 196.206 688.587 210 720 210C751.413 210 779.604 196.206 798.846 174.344C821.859 148.199 849.806 120 884.636 120H1380C1413.14 120 1440 93.1371 1440 60V60C1440 26.8629 1413.14 0 1380 0H720Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <a href="#about" class="heading__btn">
+                        <span>Подробнее</span>
+                        <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 1C9 0.447715 8.55228 0 8 0C7.44772 0 7 0.447715 7 1H9ZM7.29289 23.7071C7.68342 24.0976 8.31658 24.0976 8.70711 23.7071L15.0711 17.3431C15.4616 16.9526 15.4616 16.3195 15.0711 15.9289C14.6805 15.5384 14.0474 15.5384 13.6569 15.9289L8 21.5858L2.34315 15.9289C1.95262 15.5384 1.31946 15.5384 0.928932 15.9289C0.538408 16.3195 0.538408 16.9526 0.928932 17.3431L7.29289 23.7071ZM7 1V23H9V1H7Z"
+                                fill="#1D1818" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="breadcrumbs container">
+                    <img src="images/icons/breadcrumbs-arrow-back.svg" alt="icon">
+                    <a href="javascript:window.history.back();">Назад</a>
+                </div>
+                <div class="about-wrapper container-grid">
+                    <div class="about__info">
+                        <div class="about__text">
+                            <p>В ассортименте представлен полный спектр рыболовных снастейи широкий ассортимент
+                                кемпинговых и туристических палаток, спальные мешки, кемпинговая мебель, одежда для
+                                рыбалкии активного отдыха и многое другое. Гибкая система скидок, доставка заказа в
+                                любой регион России, индивидуальный подход – все это делает сотрудничество с нами очень
+                                удобными эффективным. <br><br>
+
+                                Мы продаем только качественные рыболовные снасти.Весь ассортимент товаров проходит
+                                строжайший контрольи испытывается рыболовами-профессионалами перед поступлением на наш
+                                склад. <br><br>
+
+                                Видео-отчеты об испытаниях снастей можно посмотреть в нашей видеогалерее.</p>
+                        </div>
+                        <a href="#gallery" class="about__btn btn-outline">Перейти в видеогалерею</a>
+                    </div>
+                    <div class="about__benefits">
+                        <div class="about__benefit">
+                            <p>Более 20 000 товаров в каталоге</p>
+                        </div>
+                        <div class="about__benefit">
+                            <p>Подробная информация о товарах: видео и рекомендации</p>
+                        </div>
+                        <div class="about__benefit">
+                            <p>Профессиональная консультация по товарам</p>
+                        </div>
+                        <div class="about__benefit">
+                            <p>Быстрое оформление и оперативная обработка заказа</p>
+                        </div>
+                        <div class="about__benefit">
+                            <p>Доставка по РФ удобной Вам транспортной компанией</p>
+                        </div>
+                        <div class="about__benefit">
+                            <p>Удобная система накопительных и разовых скидок</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video-gallery top-rounded" id="gallery">
+                <div class="container">
+                    <h3 class="video-gallery__title">Видеогалерея</h3>
+                    <div class="video">
+                        <h5 class="video__title">"Два пескаря". День 1.</h5>
+                        <p class="video__desc">Великолепная рыбалка по щуке, особенно на поверхностные приманки Halcyon
+                            System.</p>
+                        <iframe class="video__link" width="1200" height="600"
+                            src="https://www.youtube.com/embed/i-icODk5vv4?si=7OrG3-q-N4FeM-b9"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="video__products">
+                            <span>В видео были задействованы следующие товары:</span>
+                            <ul>
+                                <li><a href="#">Поппер Tiemco CALLING PEPPER 70 mm</a></li>
+                                <li><a href="#">Воблер Lurefans CC-60</a></li>
+                                <li><a href="#">Воблер Lurefans R110</a></li>
+                                <li><a href="#">Воблер Lurefans CC-60S</a></li>
+                                <li><a href="#">Воблер Tiemco KNUCKLE PEPPER Tiny 45 mm</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <h5 class="video__title">"Два пескаря". День 2.</h5>
+                        <p class="video__desc"></p>
+                        <iframe class="video__link" width="1200" height="600"
+                            src="https://www.youtube.com/embed/1ILebN3hk8k?si=BBp5xZViw9Ki0DbM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="video__products">
+                            <span>В видео были задействованы следующие товары:</span>
+                            <ul>
+                                <li><a href="#">Поппер Tiemco CALLING PEPPER 70 mm</a></li>
+                                <li><a href="#">Воблер Tiemco KNUCKLE PEPPER Tiny 45 mm</a></li>
+                                <li><a href="#">Поппер Halcyon System Penny Suck 99 - БОМБА!!!</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <h5 class="video__title">ЗДОРОВЕННЫЙ ХАРИУС на японскую микроблесну</h5>
+                        <p class="video__desc">Ловим крупных хариусов на японскую микроблесну Country Road</p>
+                        <iframe class="video__link" width="1200" height="600"
+                            src="https://www.youtube.com/embed/i98A8g7D0Co?si=a6V0zmmFFoNDbos-"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="video__products">
+                            <span>В видео были задействованы следующие товары:</span>
+                            <ul>
+                                <li><a href="#">Японская блесна Country Road</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <h5 class="video__title">Испытания бокоплава от Garry Angler.</h5>
+                        <p class="video__desc">Ловля щуки на
+                            воблер бокоплав. Имитация умирающей или кормящейся рыбки.</p>
+                        <iframe class="video__link" width="1200" height="600"
+                            src="https://www.youtube.com/embed/zb48qlMDiL4?si=Ri2jbCC5ZD5MXblC"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="video__products">
+                            <span>В видео были задействованы следующие товары:</span>
+                            <ul>
+                                <li><a href="#">Воблер бокоплав Garry Angler</a></li>
+                                <li><a href="#">Спиннинг ультралайт из серии Encore Nemesis</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#top" class="btn">Вернуться наверх</a>
+                </div>
+            </section>
         </main>
         @@include('./../components/_footer.html')
     </div>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>

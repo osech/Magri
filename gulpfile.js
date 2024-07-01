@@ -82,7 +82,7 @@ function building() {
     return src([
         'app/css/style.min.css',
         'app/fonts/*.*',
-        'app/images/*.*',
+        'app/images/*.avif',
         'app/images/icons/*.*',
         'app/images/favicon/*.*',
         '!app/images/src',

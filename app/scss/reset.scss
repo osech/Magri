@@ -8,6 +8,7 @@ html{
   box-sizing: inherit;
 }
 
+ul,
 ul[class],
 ol[class] {
   padding: 0;
@@ -32,7 +33,7 @@ dd {
   margin: 0;
 }
 
-ul[class] {
+ul, ul[class] {
   list-style: none;
 }
 

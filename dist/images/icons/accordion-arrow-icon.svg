@@ -1,0 +1,20 @@
+<svg width="12.000000" height="12.000000" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip11_9345">
+			<rect id="Иконки/Стрелка вертикаль" width="12.000000" height="12.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip11_9345)">
+		<mask id="mask11_9341" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="12.000000" height="12.000000">
+			<path id="Vector" d="M12 0L12 12L0 12L0 0L12 0Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</mask>
+		<g mask="url(#mask11_9341)">
+			<g opacity="0.968000">
+				<path id="Vector" d="M12.01 3.05C12.01 3.16 12.01 3.26 12.01 3.36C11.97 3.4 11.95 3.45 11.92 3.5C10.06 5.38 8.19 7.26 6.31 9.14C6.11 9.28 5.91 9.28 5.7 9.14C3.82 7.26 1.95 5.38 0.09 3.5C0.05 3.45 0.03 3.41 0.01 3.36C0.01 3.26 0.01 3.16 0.01 3.05C0.11 2.83 0.29 2.72 0.55 2.74C0.64 2.76 0.73 2.8 0.8 2.85C2.53 4.6 4.26 6.34 6.01 8.07C7.75 6.34 9.49 4.6 11.21 2.85C11.42 2.69 11.63 2.69 11.84 2.83C11.91 2.9 11.97 2.97 12.01 3.05Z" fill="#1D1818" fill-opacity="1.000000" fill-rule="evenodd"/>
+			</g>
+		</g>
+	</g>
+</svg>
