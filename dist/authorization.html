@@ -446,23 +446,25 @@
 
         <main class="main authorization-page">
             <section class="authorization container heading">
-                <div class="authorization__btns">
-                    <a href="#" class="authorization__btn active"><h5>Авторизация</h5></a>
-                    <a href="registration.html" class="authorization__btn"><h5>Регистрация</h5></a>
+                <div class="authorization__wrapper container">
+                    <div class="authorization__btns">
+                        <a href="#" class="authorization__btn active"><h5>Авторизация</h5></a>
+                        <a href="registration.html" class="authorization__btn"><h5>Регистрация</h5></a>
+                    </div>
+                    <form class="contacts-info" action="" method="post" name="contacts" autocomplete="on">
+                        <div>
+                            <label for="user-email">Электронная почта</label>
+                            <input type="email" class="line-input" name="user-email" id="user-email">
+                        </div>
+    
+                        <div>
+                            <label for="user-pass">Пароль</label>
+                            <input type="password" class="line-input" name="user-pass" id="user-pass">
+                        </div>
+    
+                        <button class="btn _input-mt" type="submit">Войти в аккаунт</button>
+                    </form>
                 </div>
-                <form class="contacts-info" action="" method="post" name="contacts" autocomplete="on">
-                    <div>
-                        <label for="user-email">Электронная почта</label>
-                        <input type="email" class="line-input" name="user-email" id="user-email">
-                    </div>
-
-                    <div>
-                        <label for="user-pass">Пароль</label>
-                        <input type="password" class="line-input" name="user-pass" id="user-pass">
-                    </div>
-
-                    <button class="btn _input-mt" type="submit">Войти в аккаунт</button>
-                </form>
             </section>
         </main>
         <footer class="footer" id="footer">

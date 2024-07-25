@@ -470,86 +470,88 @@
                 </div>
             </section>
             <section class="authorization container">
-                <div class="authorization__btns">
-                    <a href="authorization.html " class="authorization__btn">
-                        <h5>Авторизация</h5>
-                    </a>
-                    <a href="#" class="authorization__btn active">
-                        <h5>Регистрация</h5>
-                    </a>
+                <div class="authorization__wrapper container">
+                    <div class="authorization__btns">
+                        <a href="authorization.html " class="authorization__btn">
+                            <h5>Авторизация</h5>
+                        </a>
+                        <a href="#" class="authorization__btn active">
+                            <h5>Регистрация</h5>
+                        </a>
+                    </div>
+                    <form class="contacts-info" action="" method="post" name="contacts" autocomplete="on">
+                        <div>
+                            <label for="user-email">Электронная почта*</label>
+                            <input type="email" class="line-input" name="user-email" id="user-email"
+                                placeholder="example@mail.ru">
+                        </div>
+    
+                        <div>
+                            <label for="user-name">Фамилия и имя*</label>
+                            <input type="text" class="line-input" name="user-name" id="user-name" placeholder="Иванов Иван">
+                        </div>
+    
+                        <div>
+                            <label for="user-tel">Номер телефона*</label>
+                            <input type="tel" class="line-input" name="user-tel" id="user-tel"
+                                placeholder="+7(123)456-78-90">
+                        </div>
+    
+                        <div class="reg-password">
+                            <div>
+                                <label for="user-pass">Пароль*</label>
+                                <input type="password" class="line-input" name="user-pass" id="user-pass"
+                                    placeholder="От 8 символов: цифры и латинские буквы">
+                            </div>
+                            <div>
+                                <label for="user-pass-repeat">Повторите пароль*</label>
+                                <input type="password" class="line-input" name="user-pass-repeat" id="user-pass-repeat"
+                                    placeholder="От 8 символов: цифры и латинские буквы">
+                            </div>
+                        </div>
+    
+                        <span class="contacts-info__subtitle">Дополнительная информация</span>
+    
+                        <div>
+                            <label for="org-inn">ИНН организации*</label>
+                            <input type="number" class="line-input" name="org-inn" id="org-inn" placeholder="123456789123">
+                        </div>
+    
+                        <div>
+                            <label for="org-address">Юридический адрес*</label>
+                            <input type="text" class="line-input" name="org-address" id="org-address"
+                                placeholder="Россия, г. Москва, ул. Первая, д. 1, корп.1">
+                        </div>
+    
+                        <div>
+                            <label for="org-bank">Наименование банка*</label>
+                            <input type="text" class="line-input" name="org-bank" id="org-bank"
+                                placeholder="ОАО «Сбербанк»">
+                        </div>
+    
+                        <div>
+                            <label for="org-pay-acc">Расчетный счет*</label>
+                            <input type="number" class="line-input" name="org-pay-acc" id="org-pay-acc"
+                                placeholder="12345678912345678912">
+                        </div>
+    
+                        <div>
+                            <label for="org-cor-acc">Корр. счет*</label>
+                            <input type="number" class="line-input" name="org-cor-acc" id="org-cor-acc"
+                                placeholder="12345678912345678912">
+                        </div>
+    
+                        <div>
+                            <label for="org-bik">БИК*</label>
+                            <input type="number" class="line-input" name="org-bik" id="org-bik" placeholder="123456789">
+                        </div>
+    
+                        <span class="privacy-warning _input-mt">Нажимая на кнопку, Вы соглашаетесь с политикой
+                            конфиденциальности ООО «Магри»</span>
+    
+                        <button class="btn _input-mt" type="submit">Зарегистрироваться</button>
+                    </form>
                 </div>
-                <form class="contacts-info" action="" method="post" name="contacts" autocomplete="on">
-                    <div>
-                        <label for="user-email">Электронная почта*</label>
-                        <input type="email" class="line-input" name="user-email" id="user-email"
-                            placeholder="example@mail.ru">
-                    </div>
-
-                    <div>
-                        <label for="user-name">Фамилия и имя*</label>
-                        <input type="text" class="line-input" name="user-name" id="user-name" placeholder="Иванов Иван">
-                    </div>
-
-                    <div>
-                        <label for="user-tel">Номер телефона*</label>
-                        <input type="tel" class="line-input" name="user-tel" id="user-tel"
-                            placeholder="+7(123)456-78-90">
-                    </div>
-
-                    <div class="reg-password">
-                        <div>
-                            <label for="user-pass">Пароль*</label>
-                            <input type="password" class="line-input" name="user-pass" id="user-pass"
-                                placeholder="От 8 символов: цифры и латинские буквы">
-                        </div>
-                        <div>
-                            <label for="user-pass-repeat">Повторите пароль*</label>
-                            <input type="password" class="line-input" name="user-pass-repeat" id="user-pass-repeat"
-                                placeholder="От 8 символов: цифры и латинские буквы">
-                        </div>
-                    </div>
-
-                    <span class="contacts-info__subtitle">Дополнительная информация</span>
-
-                    <div>
-                        <label for="org-inn">ИНН организации*</label>
-                        <input type="number" class="line-input" name="org-inn" id="org-inn" placeholder="123456789123">
-                    </div>
-
-                    <div>
-                        <label for="org-address">Юридический адрес*</label>
-                        <input type="text" class="line-input" name="org-address" id="org-address"
-                            placeholder="Россия, г. Москва, ул. Первая, д. 1, корп.1">
-                    </div>
-
-                    <div>
-                        <label for="org-bank">Наименование банка*</label>
-                        <input type="text" class="line-input" name="org-bank" id="org-bank"
-                            placeholder="ОАО «Сбербанк»">
-                    </div>
-
-                    <div>
-                        <label for="org-pay-acc">Расчетный счет*</label>
-                        <input type="number" class="line-input" name="org-pay-acc" id="org-pay-acc"
-                            placeholder="12345678912345678912">
-                    </div>
-
-                    <div>
-                        <label for="org-cor-acc">Корр. счет*</label>
-                        <input type="number" class="line-input" name="org-cor-acc" id="org-cor-acc"
-                            placeholder="12345678912345678912">
-                    </div>
-
-                    <div>
-                        <label for="org-bik">БИК*</label>
-                        <input type="number" class="line-input" name="org-bik" id="org-bik" placeholder="123456789">
-                    </div>
-
-                    <span class="privacy-warning _input-mt">Нажимая на кнопку, Вы соглашаетесь с политикой
-                        конфиденциальности ООО «Магри»</span>
-
-                    <button class="btn _input-mt" type="submit">Зарегистрироваться</button>
-                </form>
             </section>
         </main>
         <footer class="footer" id="footer">
