@@ -64,11 +64,6 @@
             width: 100%;
             background: none;
             @include inscription-text;
-
-            &::placeholder {
-                color: $second-gray;
-                @include inscription-text
-            }
         }
 
         .input-submit {
@@ -96,23 +91,43 @@
             }
         }
 
+        .profile-icon.signin {
+
+            svg {
+                border: 1px solid $main-dark;
+                border-radius: 8px;
+                transition: .15s;
+            }
+        }
+
         .navbar__icon {
             margin-left: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             svg path {
                 transition: .15s;
             }
 
             &:hover {
-                svg path {
-                    fill: $accent-orange;
-                }
+                svg {
+                    border-color: $accent-orange;
+
+                    path {
+                        fill: $accent-orange;
+                    }
+                } 
             }
 
             &:active {
-                svg path {
-                    fill: $accent-red;
-                }
+                svg {
+                    border-color: $accent-red;
+
+                    path {
+                        fill: $accent-red;
+                    }
+                } 
             }
         }
     }
@@ -797,7 +812,7 @@
     &__title {
         display: block;
         height: 44px;
-        -webkit-line-clamp: 2;
+        line-clamp: 2;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         overflow: hidden;
@@ -1197,14 +1212,21 @@
         border: 2px solid $main-dark;
         border-radius: 20px;
 
-        &__text {
+        &__desc {
             margin-top: 40px;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            gap: 18px;
+        }
 
-            &:nth-child(3) {
-                margin-top: 18px;
-            }
+        &__text {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__total {
+            @include btn-text;
+            margin-top: 40px;
         }
 
         &__cost {
@@ -1215,13 +1237,170 @@
             color: $accent-orange;
         }
 
-        &__total {
-            @include btn-text;
-        }
-
         &__btn {
             margin-top: 40px;
             width: 100%;
         }
+    }
+}
+
+
+// purchase-page
+
+.purchase-page {
+    .cart-body__wrapper {
+        margin-top: 40px;
+    }
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    label {
+        @include btn-text;
+    }
+
+    .line-input {
+        width: 100%;
+        margin-top: 6px;
+        resize: none;   
+    }
+
+    &__subtitle {
+        display: block;
+        @include btn-text;
+        margin: 16px 0 6px 0;
+    }
+
+    .purchase__btn {
+        max-width: 333px;
+        margin-top: 16px;
+    }
+
+    .dilivery-method {
+        display: flex;
+        align-items: start;
+        gap: 16px;
+
+        &__title {
+            @include accent-text;
+        }
+
+        &__desc {
+            margin-top: 12px;
+            @include main-text;
+        }
+    }  
+
+    ._input-mt {
+        margin-top: 16px;
+    }
+}
+
+.purchase-payment {
+    .contacts-info {
+        gap: 40px;
+
+        &__title {
+            display: block;
+            @include btn-text;
+            margin-bottom: 12px;
+        }
+
+        &__desc {
+            display: block;
+            margin-top: 8px;
+        }
+    }
+
+    .cart-payment__btn.btn-outline-dark {
+        margin-top: 16px;
+    }
+}
+
+.purchase-success {
+    padding-block: 60px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        @include accent-text;
+        margin-top: 32px;
+    }
+
+    img {
+        max-width: 240px;
+        margin-top: 60px;
+    }
+
+    .btn-outline-dark {
+        margin-top: 100px;
+        width: 100%;
+    }
+}
+
+// authorization-page
+
+.authorization {
+    padding-block: 120px;
+
+    &__wrapper.container {
+        padding-inline: 205px;
+    }
+}
+
+.authorization__btns {
+    margin-bottom: 80px;
+    display: flex;
+    gap: 30px;
+
+    .authorization__btn {
+        flex-grow: 1;
+        text-align: center;
+        border-bottom: 3px solid rgb(147, 147, 147);
+
+        &:hover {
+            border-color: $accent-orange;
+        }
+
+        &.active {
+            color: $accent-red;
+            border-color: $accent-red;
+
+            &:hover {
+                border-color: inherit;
+            }
+        }
+    }
+}
+
+.reg-password {
+    display: flex;
+    gap: 30px;
+
+    div {
+        flex-grow: 1;
+    }
+}
+
+.registration-corp-page {
+    padding-block: 60px 120px;
+
+    .authorization {
+        padding-block: 0;
+        margin-top: 80px;
+    }
+
+    .corp-title {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    
+    .authorization-warning {
+        margin-top: 40px;
     }
 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./../components/_head.html', {
+'title': 'Корзина'
+})
+
+<body>
+    <div class="wrapper">
+        @@include('./../components/_header.html')
+
+        <main class="main purchase-page">
+            <section class="cart-body container heading">
+                <div class="breadcrumbs">
+                    <a href="cart.html">Корзина</a>
+                    <img src="images/icons/breadcrumbs-arrow.svg" alt="icon">
+                    <a href="purchase-contacts.html">Контактная информация</a>
+                    <img src="images/icons/breadcrumbs-arrow.svg" alt="icon">
+                    <a href="purchase-delivery.html">Способ доставки</a>
+                    <img src="images/icons/breadcrumbs-arrow.svg" alt="icon">
+                    <span>Оплата заказа</span>
+
+                </div>
+                <div class="cart-body__wrapper purchase-payment">
+                    <div class="cart-products contacts-info">
+                        <div>
+                            <span class="contacts-info__title">Получатель</span>
+                            <span class="contacts-info__desc">Иванов Иван</span>
+                            <span class="contacts-info__desc">+7(123)456-78-90</span>
+                            <span class="contacts-info__desc">ИНН: 123456789123</span>
+                        </div>
+                        <div>
+                            <span class="contacts-info__title">Адрес доставки</span>
+                            <span class="contacts-info__desc">Регион, город, улица, дом, корпус,
+                                квартира/помещение</span>
+                        </div>
+                        <div>
+                            <span class="contacts-info__title">Способ доставки</span>
+                            <span class="contacts-info__desc">ТК Главдоставка</span>
+                            <span class="contacts-info__desc">Срок доставки от 1 до 12 дней</span>
+                            <span class="contacts-info__desc">Стоимость <span id="dilivery-price">100.00
+                                    руб.</span></span>
+                        </div>
+                    </div>
+                    <div class="cart-payment">
+                        <h5 class="cart-payment__title">К оплате</h5>
+                        <div class="cart-payment__desc">
+                            <div class="cart-payment__text">
+                                <span>Товары (<span class="cart-product-count">5</span>)</span><span
+                                    class="cart-payment__cost">500.00 руб.</span>
+                            </div>
+                            <div class="cart-payment__text">
+                                <span>Скидка</span><span class="cart-payment__cost cart-payment__discount">-50.00 руб.</span>
+                            </div>
+                            <div class="cart-payment__text">
+                                <span>Доставка</span><span class="cart-payment__cost">100.00 руб.</span>
+                            </div>
+                        </div>
+                        <div class="cart-payment__text cart-payment__total">
+                            <span>Итого:</span><span class="cart-payment__cost">550.00руб.</span>
+                        </div>
+                        <a class="cart-payment__btn btn" href="purchase-success.html">Оплата картой</a>
+                        <a class="cart-payment__btn btn-outline-dark" href="purchase-success.html">Счет на оплату</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('./../components/_footer.html')
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

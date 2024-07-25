@@ -39,6 +39,11 @@ html {
 	border-radius: 10px;
 	display: block;
 
+	&::placeholder {
+		color: $second-gray;
+		@include inscription-text
+	}
+
 	&:focus {
 		outline: none;
 	}

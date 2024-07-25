@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./../components/_head.html', {
+'title': 'Корзина'
+})
+
+<body>
+    <div class="wrapper">
+        @@include('./../components/_header.html')
+
+        <main class="main registration-page">
+            <section class="authorization container heading">
+
+                <!-- <div class="authorization-warning">
+                    <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.995" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.3574 0.787073C17.5452 0.557826 21.4808 2.63986 24.164 7.03317C25.7588 10.0451 26.0973 13.1935 25.1796 16.4785C23.8339 20.6002 21.1002 23.3339 16.9784 24.6797C12.7563 25.8056 8.94775 25.0101 5.55267 22.2929C2.13556 19.1856 0.772925 15.3347 1.46478 10.7402C2.38083 6.4733 4.82679 3.4518 8.80267 1.67575C9.95433 1.21855 11.1393 0.922329 12.3574 0.787073ZM13.0683 5.71285C14.0359 5.59982 14.7383 5.97219 15.1757 6.83004C15.2713 7.08349 15.3136 7.34588 15.3027 7.61715C15.1318 9.89616 14.9371 12.1728 14.7187 14.4472C14.2909 15.3741 13.6222 15.6027 12.7128 15.1328C12.4827 14.9514 12.3219 14.7229 12.2304 14.4472C12.0119 12.1728 11.8173 9.89616 11.6464 7.61715C11.6848 6.64992 12.1587 6.01516 13.0683 5.71285ZM13.1191 17.0879C13.9864 16.9839 14.6042 17.3224 14.9726 18.1035C15.2149 19.049 14.9017 19.7345 14.0331 20.1601C13.0876 20.4024 12.4021 20.0892 11.9765 19.2207C11.7346 18.1637 12.1154 17.4527 13.1191 17.0879Z"
+                            fill="#E1044E" />
+                    </svg>
+                    <span>Чтобы добавить товар в корзину, необходимо авторизоваться на нашем сайте</span>
+                    <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.995" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12.3574 0.787073C17.5452 0.557826 21.4808 2.63986 24.164 7.03317C25.7588 10.0451 26.0973 13.1935 25.1796 16.4785C23.8339 20.6002 21.1002 23.3339 16.9784 24.6797C12.7563 25.8056 8.94775 25.0101 5.55267 22.2929C2.13556 19.1856 0.772925 15.3347 1.46478 10.7402C2.38083 6.4733 4.82679 3.4518 8.80267 1.67575C9.95433 1.21855 11.1393 0.922329 12.3574 0.787073ZM13.0683 5.71285C14.0359 5.59982 14.7383 5.97219 15.1757 6.83004C15.2713 7.08349 15.3136 7.34588 15.3027 7.61715C15.1318 9.89616 14.9371 12.1728 14.7187 14.4472C14.2909 15.3741 13.6222 15.6027 12.7128 15.1328C12.4827 14.9514 12.3219 14.7229 12.2304 14.4472C12.0119 12.1728 11.8173 9.89616 11.6464 7.61715C11.6848 6.64992 12.1587 6.01516 13.0683 5.71285ZM13.1191 17.0879C13.9864 16.9839 14.6042 17.3224 14.9726 18.1035C15.2149 19.049 14.9017 19.7345 14.0331 20.1601C13.0876 20.4024 12.4021 20.0892 11.9765 19.2207C11.7346 18.1637 12.1154 17.4527 13.1191 17.0879Z"
+                            fill="#E1044E" />
+                    </svg>
+                </div> -->
+
+                <div class="authorization__wrapper container">
+                    <div class="authorization__btns">
+                        <a href="authorization.html " class="authorization__btn"><h5>Авторизация</h5></a>
+                        <a href="#" class="authorization__btn active"><h5>Регистрация</h5></a>
+                    </div>
+                    <form class="contacts-info" action="" method="post" name="contacts" autocomplete="on">
+                        <div>
+                            <label for="user-email">Электронная почта*</label>
+                            <input type="email" class="line-input" name="user-email" id="user-email" placeholder="example@mail.ru">
+                        </div>
+    
+                        <div>
+                            <label for="user-name">Фамилия и имя*</label>
+                            <input type="text" class="line-input" name="user-name" id="user-name" placeholder="Иванов Иван">
+                        </div>
+    
+                        <div>
+                            <label for="user-tel">Номер телефона*</label>
+                            <input type="tel" class="line-input" name="user-tel" id="user-tel" placeholder="+7(123)456-78-90">
+                        </div>
+    
+                        <div class="reg-password">
+                            <div>
+                                <label for="user-pass">Пароль*</label>
+                                <input type="password" class="line-input" name="user-pass" id="user-pass" placeholder="От 8 символов: цифры и латинские буквы">
+                            </div>
+                            <div>
+                                <label for="user-pass-repeat">Повторите пароль*</label>
+                                <input type="password" class="line-input" name="user-pass-repeat" id="user-pass-repeat" placeholder="От 8 символов: цифры и латинские буквы">
+                            </div>
+                        </div>
+    
+                        <span class="privacy-warning _input-mt">Нажимая на кнопку, Вы соглашаетесь с политикой конфиденциальности ООО «Магри»</span>
+    
+                        <button class="btn _input-mt" type="submit">Зарегистрироваться</button>
+                        <a class="btn-outline-dark _input-mt" href="registration-corp.html">Зарегистрировать корпоративный аккаунт</a>
+                    </form>
+                </div>
+            </section>
+        </main>
+        @@include('./../components/_footer.html')
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
