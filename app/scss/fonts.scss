@@ -13,18 +13,35 @@ h1 {
     font-size: 49px;
     line-height: 80px;
     font-weight: 600;
+
+    @media (max-width: 610px) {
+        font-size: 25px;
+        line-height: 28px;
+    }
 }
 
 h2 {
     font-size: 45px;
     line-height: 52px;
     font-weight: 700;
+
+    @media (max-width: 610px) {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+    }
 }
 
 h3 {
     font-size: 40px;
     line-height: 50px;
     font-weight: 700;
+
+    @media (max-width: 610px) {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+    }
 }
 
 h4 {
@@ -37,12 +54,22 @@ h5 {
     font-size: 26px;
     line-height: 34px;
     font-weight: 500;
+
+    @media (max-width: 610px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
 @mixin accent-text {
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
+
+    @media (max-width: 610px) {
+        font-size: 16px;
+        font-weight: 600;
+    }
 }
 
 @mixin inscription-text {
@@ -55,12 +82,21 @@ h5 {
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
+
+    @media (max-width: 610px) {
+        font-size: 14px;
+    }
 }
 
 @mixin btn-text {
     font-size: 18px;
     line-height: 22px;
     font-weight: 600;
+
+    @media (max-width: 610px) {
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
 
 @mixin background-text {
@@ -68,6 +104,12 @@ h5 {
     font-size: 100px;
     line-height: 120px;
     font-weight: 400;
+}
+
+@mixin main-mini-text {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
 }
 
 html, body{
@@ -80,5 +122,3 @@ strong {
     color: $accent-orange;
     font-weight: inherit;
 }
-
-

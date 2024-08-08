@@ -57,37 +57,43 @@ function popup(openPopupButton, closePopupButton, popup, popupBg) {
   openPopupButton.addEventListener('click', (e) => {
     e.preventDefault(); // Предотвращаем дефолтное поведение браузера
     popupBg.classList.add('active'); // Добавляем класс 'active' для фона
-    popup.classList.add('active'); // И для самого окна
+    popup.forEach((el) => el.classList.add('active')); // И для самого окна
     document.body.classList.add('scroll-lock');
   });
 
-  closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
-    popupBg.classList.remove('active'); // Убираем активный класс с фона
-    popup.classList.remove('active'); // И с окна
-    document.body.classList.remove('scroll-lock');
-  });
+  closePopupButton.forEach((el) => {
+    el.addEventListener('click',() => { // Вешаем обработчик на крестик
+      popupBg.classList.remove('active'); // Убираем активный класс с фона
+      popup.forEach((el) => el.classList.remove('active')); // И с окна
+      document.body.classList.remove('scroll-lock');
+    })});
+   
 
   document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
     if(e.target === popupBg) { // Если цель клика - фон, то:
         popupBg.classList.remove('active'); // Убираем активный класс с фона
-        popup.classList.remove('active'); // И с окна
+        popup.forEach((el) => el.classList.remove('active')); // И с окна
         document.body.classList.remove('scroll-lock');
     }
   });
 };
 
 let cartPopupBg = document.querySelector('.cart-popup'); // Фон попап окна
-let cartPopup = document.querySelector('.cart-popup__content'); // Само окно
+let cartPopup = document.querySelectorAll('.cart-popup__content'); // Само окно
 let cartOpenPopupButton = document.querySelector('.open-cart-popup'); // Кнопки для показа окна
-let cartClosePopupButton = document.querySelector('.close-cart-popup'); // Кнопка для скрытия окна
+let cartClosePopupButton = document.querySelectorAll('.close-cart-popup'); // Кнопка для скрытия окна
 popup(cartOpenPopupButton, cartClosePopupButton, cartPopup, cartPopupBg);
 
-
-
 let filterPopupBg = document.querySelector('.filter-popup'); // Фон попап окна
-let filterPopup = document.querySelector('.filter-popup__content'); // Само окно
+let filterPopup = document.querySelectorAll('.filter-popup__content'); // Само окно
 let filterOpenPopupButton = document.querySelector('.open-filter-popup'); // Кнопки для показа окна
-let filterClosePopupButton = document.querySelector('.close-filter-popup'); // Кнопка для скрытия окна
+let filterClosePopupButton = document.querySelectorAll('.close-filter-popup'); // Кнопка для скрытия окна
 popup(filterOpenPopupButton, filterClosePopupButton, filterPopup, filterPopupBg);
+
+let navbarPopupBg = document.querySelector('.navbar-popup'); // Фон попап окна
+let navbarPopup = document.querySelectorAll('.navbar-popup__content'); // Само окно
+let navbarOpenPopupButton = document.querySelector('.open-navbar-popup'); // Кнопки для показа окна
+let navbarClosePopupButton = document.querySelectorAll('.close-navbar-popup'); // Кнопка для скрытия окна
+popup(navbarOpenPopupButton, navbarClosePopupButton, navbarPopup, navbarPopupBg);
 
 

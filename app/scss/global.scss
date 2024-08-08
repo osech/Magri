@@ -20,10 +20,19 @@ html {
 	flex: 0 0 auto;
 }
 
-.container, .container-grid{
+.container, .container-grid {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0; 
+
+	@media (max-width: 1230px) {
+		max-width: 1024px;
+	}
+
+	@media (max-width: 977px) {
+		max-width: 100%;
+		padding-inline: 16px;
+	}
 }
 
 .container-grid {
@@ -34,7 +43,7 @@ html {
 
 .line-input {
 	@include inscription-text;
-	padding: 4px 8px 4px 8px;
+	padding: 4px 8px;
 	border: 1px solid $main-dark;
 	border-radius: 10px;
 	display: block;
@@ -46,6 +55,10 @@ html {
 
 	&:focus {
 		outline: none;
+	}
+
+	@media (max-width: 610px) {
+		padding: 11px 18px;
 	}
 }
 
@@ -89,6 +102,10 @@ input[type="search"]::-webkit-search-results-decoration {
 	&:disabled {
 		background: $second-gray;
 		cursor: default;
+	}
+
+	@media (max-width:610px) {
+		padding: 14px 4px;
 	}
 }
 
@@ -319,5 +336,12 @@ input[type="search"]::-webkit-search-results-decoration {
 	border-color: $second-fading-red-20;
 	background: $second-fading-red-20;
 }
+
+
+// media
+
+
+
+
 
 

@@ -7,7 +7,8 @@
                 <li class="navbar__item"><a href="index.html#faq">FAQ</a></li>
                 <li class="navbar__item"><a href="#footer">Контакты</a></li>
             </ul>
-            <a href="index.html"><img class="navbar__logo" src="images/logo.avif" alt="logo"></a>
+            <a class="navbar__logo" href="index.html"><img src="images/logo.avif" alt="logo"></a>
+            <img class="navbar__burger-btn open-navbar-popup open-popup" src="images/icons/burger-menu-icon.svg" alt="">
             <div class="navbar__info">
                 <form>
                     <input class="navbar__input line-input" type="search" placeholder="Введите ключевое слово">
@@ -18,7 +19,7 @@
                                 fill="#1D1818" />
                         </svg>
                     </button>
-                </form>
+                </form> 
                 <a class="navbar__icon open-cart-popup">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.988" fill-rule="evenodd" clip-rule="evenodd"
@@ -42,6 +43,21 @@
                             fill="#1D1818" />
                     </svg>
                 </a>
+            </div>
+            <div class="navbar-popup popup">
+                <div class="navbar-popup__content popup__content">
+                    <div class="popup__header">
+                        <img class="close-navbar-popup close-popup" src="images/icons/close-icon.svg" alt="">
+                    </div>
+                    <ul class="navbar__list-mob">
+                        <li class="navbar__item close-navbar-popup"><a href="about.html">О компании</a></li>
+                        <li class="navbar__item close-navbar-popup"><a href="catalog.html">Каталог</a></li>
+                        <li class="navbar__item close-navbar-popup"><a href="index.html#faq">FAQ</a></li>
+                        <li class="navbar__item close-navbar-popup"><a href="#footer">Контакты</a></li>
+                        <div class="navbar__item-line"></div>
+                        <li class="navbar__item close-navbar-popup"><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>
