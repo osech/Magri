@@ -79,7 +79,7 @@
     </div>
     <div class="cart-popup popup">
         <div class="cart-popup__content popup__content">
-            <div class="popup__header">
+            <div class="cart-popup__header popup__header">
                 <h5>Корзина</h5>
                 <img class="close-cart-popup close-popup" src="images/icons/close-icon.svg" alt="">
             </div>
@@ -437,14 +437,14 @@
                     </div>
                 </div>
             </div>
-            <div class="popup__footer">
+            <div class="cart-popup__footer popup__footer">
                 <div class="cart-total-price">
                     <span>Итого:</span>
                     <span>700.00 руб.</span>
                 </div>
                 <div class="popup__btns">
-                    <a href="cart.html" class="btn-outline popup__btn">Посмотреть корзину</a>
-                    <a class="btn" href="purchase.html">Оформить заказ</a>
+                    <a href="cart.html" class="btn-outline popup__btn">В корзину</a>
+                    <a class="btn" href="purchase-contacts.html">Оформить заказ</a>
                 </div>
             </div>
             <!-- <div class="cart-popup__body popup__body _empty">
@@ -459,6 +459,12 @@
         </div>
     </div>
 </header>
+<nav class="tabbar container">
+    <a class="tabbar__item" href="index.html"><img src="images/icons/home-icon.svg" alt=""></a>
+    <a class="tabbar__item" href="catalog.html"><img src="images/icons/burger-tabbar-icon.svg" alt=""></a>
+    <a class="tabbar__item open-cart-popup open-cart"><img src="images/icons/cart-icon.svg" alt=""></a>
+    <a class="tabbar__item" href="authorization.html"><img src="images/icons/person-tabbar-icon.svg" alt=""></a>
+</nav>
         <main class="main">
             <section class="heading">
                 <h1 class="heading__title container">Широкий ассортимент рыболовных <strong>снастей</strong> и
@@ -531,47 +537,49 @@
                 </div>
             </section>
             <section class="mini-catalog">
-                <h3 class="mini-catalog__title container">Каталог</h3>
-                <ul class="mini-catalog__list container">
-                    <li><a class="mini-catalog__item" href="category.html">
-                            <h5>Удилища</h5>
-                        </a></li>
-                    <li><a class="mini-catalog__item" href="#">
-                            <h5>Катушки</h5>
-                        </a></li>
-                    <li><a class="mini-catalog__item" href="#">
-                            <h5>Воблеры</h5>
-                        </a></li>
-                    <li><a class="mini-catalog__item" href="#">
-                            <h5>Попперы</h5>
-                        </a></li>
-                    <li><a class="mini-catalog__item" href="#">
-                            <h5>Блесна</h5>
-                        </a></li>
-                    <li><a class="mini-catalog__item" href="#">
-                            <h5>Снасточки</h5>
-                        </a></li>
-                    <li><a class="mini-catalog__item" href="#">
-                            <h5>Балансиры</h5>
-                        </a></li>
-                    <li><a class="mini-catalog__item" href="#">
-                            <h5>Кормушки</h5>
-                        </a></li>
-                    <li><a class="mini-catalog__item" href="#">
-                            <h5>Кароповая программа</h5>
-                        </a></li>
-                    <li><a class="mini-catalog__item" href="#">
-                            <h5>Крючки</h5>
-                        </a></li>
-                    <li><a class="mini-catalog__item" href="#">
-                            <h5>Мухи, стримеры</h5>
-                        </a></li>
-                    <li><a class="mini-catalog__item" href="#">
-                            <h5>Раттлины, цикады</h5>
-                        </a></li>
-                </ul>
                 <div class="container">
-                    <a class="mini-catalog__btn btn" href="catalog.html"  id="faq">Перейти к каталогу</a>
+                    <h3 class="mini-catalog__title">Каталог</h3>
+                    <ul class="mini-catalog__list">
+                        <li><a class="mini-catalog__item" href="category.html">
+                                <h5>Удилища</h5>
+                            </a></li>
+                        <li><a class="mini-catalog__item" href="category.html">
+                                <h5>Катушки</h5>
+                            </a></li>
+                        <li><a class="mini-catalog__item" href="category.html">
+                                <h5>Воблеры</h5>
+                            </a></li>
+                        <li><a class="mini-catalog__item" href="category.html">
+                                <h5>Попперы</h5>
+                            </a></li>
+                        <li><a class="mini-catalog__item" href="category.html">
+                                <h5>Блесна</h5>
+                            </a></li>
+                        <li><a class="mini-catalog__item" href="category.html">
+                                <h5>Снасточки</h5>
+                            </a></li>
+                        <li><a class="mini-catalog__item" href="category.html">
+                                <h5>Балансиры</h5>
+                            </a></li>
+                        <li><a class="mini-catalog__item" href="category.html">
+                                <h5>Кормушки</h5>
+                            </a></li>
+                        <li><a class="mini-catalog__item" href="category.html">
+                                <h5>Кароповая программа</h5>
+                            </a></li>
+                        <li><a class="mini-catalog__item" href="category.html">
+                                <h5>Крючки</h5>
+                            </a></li>
+                        <li><a class="mini-catalog__item" href="category.html">
+                                <h5>Мухи, стримеры</h5>
+                            </a></li>
+                        <li><a class="mini-catalog__item" href="category.html">
+                                <h5>Раттлины, цикады</h5>
+                            </a></li>
+                    </ul>
+                    <div>
+                        <a class="mini-catalog__btn btn" href="catalog.html" id="faq">Перейти к каталогу</a>
+                    </div>
                 </div>
             </section>
             <section class="faq container">

@@ -36,8 +36,14 @@
             </section>
             <section class="about" id="about">
                 <div class="breadcrumbs container">
-                    <img src="images/icons/breadcrumbs-arrow-back.svg" alt="icon">
-                    <a href="javascript:window.history.back();">Назад</a>
+                    <img class="breadcrumbs-item-lg" src="images/icons/breadcrumbs-arrow-back.svg" alt="icon">
+                    <a class="breadcrumbs-item-lg" href="javascript:window.history.back();">Назад</a>
+                    <a class="breadcrumbs-back-btn breadcrumbs-item-mob" href="javascript:window.history.back();"><img src="images/icons/arrow-icon.svg" alt=""></a>
+                    <span>Все товары</span>
+                    <!-- <img class="breadcrumbs-item-mob breadcrumbs-top-bar" src="images/top-bar.svg" alt=""> -->
+                    
+                        
+
                 </div>
                 <div class="about-wrapper container-grid">
                     <div class="about__info">
@@ -55,7 +61,7 @@
             </section>
             <section class="catalog top-rounded" id="catalog">
                 <div class="container">
-                    <div class="authorization-warning">
+                    <div class="authorization-warning" style="display: none;">
                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.995" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M12.3574 0.787073C17.5452 0.557826 21.4808 2.63986 24.164 7.03317C25.7588 10.0451 26.0973 13.1935 25.1796 16.4785C23.8339 20.6002 21.1002 23.3339 16.9784 24.6797C12.7563 25.8056 8.94775 25.0101 5.55267 22.2929C2.13556 19.1856 0.772925 15.3347 1.46478 10.7402C2.38083 6.4733 4.82679 3.4518 8.80267 1.67575C9.95433 1.21855 11.1393 0.922329 12.3574 0.787073ZM13.0683 5.71285C14.0359 5.59982 14.7383 5.97219 15.1757 6.83004C15.2713 7.08349 15.3136 7.34588 15.3027 7.61715C15.1318 9.89616 14.9371 12.1728 14.7187 14.4472C14.2909 15.3741 13.6222 15.6027 12.7128 15.1328C12.4827 14.9514 12.3219 14.7229 12.2304 14.4472C12.0119 12.1728 11.8173 9.89616 11.6464 7.61715C11.6848 6.64992 12.1587 6.01516 13.0683 5.71285ZM13.1191 17.0879C13.9864 16.9839 14.6042 17.3224 14.9726 18.1035C15.2149 19.049 14.9017 19.7345 14.0331 20.1601C13.0876 20.4024 12.4021 20.0892 11.9765 19.2207C11.7346 18.1637 12.1154 17.4527 13.1191 17.0879Z"
@@ -86,7 +92,7 @@
                         </a>
                         <div class="filter-popup popup">
                             <div class="filter-popup__content popup__content">
-                                <div class="popup__header">
+                                <div class="filter-popup__header popup__header">
                                     <h5>Фильтр</h5>
                                     <img class="close-filter-popup close-popup" src="images/icons/close-icon.svg"
                                         alt="">
@@ -104,7 +110,7 @@
                                             <label class="checkbox-label" for="filter-sort-min">По убыванию цены</label>
                                         </div>
                                     </div>
-                                    <div class="product-accordion__item">
+                                    <div class="product-accordion__item filter-popup__price">
                                         <div class="product-accordion__title accordion__title"><span>Цена</span><img
                                                 class="product-accordion__icon" src="images/icons/accordion-arrow-icon.svg"
                                                 alt=""></div>
